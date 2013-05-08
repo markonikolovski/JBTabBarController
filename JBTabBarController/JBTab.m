@@ -126,12 +126,14 @@
     _backgroundView.hidden = !selected;
     
     if (selected) {
-        _titleLabel.textColor = _selectedTitleColor;
+        _titleLabel.textColor = [UIColor colorWithRed:0.102 green:0.102 blue:0.102 alpha:1];
+        _titleLabel.font = [UIFont fontWithName:@"ProximaNova-Bold" size:11.0];
         _titleLabel.shadowColor = _selectedTitleShadowColor;
         
         _imageView.image = _selectedImage;
     } else {
-        _titleLabel.textColor = _normalTitleColor;
+        _titleLabel.textColor = [UIColor colorWithRed:0.600 green:0.600 blue:0.600 alpha:1];
+        _titleLabel.font = [UIFont fontWithName:@"ProximaNova-Bold" size:11.0];
         _titleLabel.shadowColor = _normalTitleShadowColor;
         
         _imageView.image = _normalImage;
